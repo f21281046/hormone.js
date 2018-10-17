@@ -5,7 +5,7 @@
 
 export { default as analysisIP } from './src/analysisIp';
 export { default as strIntoArr } from './src/strIntoArr';
-
+export { default as arrayStructured } from './src/arrayStructured';
 
 
 
