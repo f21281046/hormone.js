@@ -1,16 +1,16 @@
-
-// simple array structure
-
-let flat = function(arr = []){
+/**
+ * @description 数组中的数组解构成普通数组，如：[1, 2, 3]
+ * @param {arr: 数组对象}
+ * */
+let flat = function (arr = []) {
     let length = arr.length;
 
-    for(let i = 0; i < length; i++){
+    for (let i = 0; i < length; i++) {
         let item = arr[i];
 
-        if(typeof item !== 'number'){
+        if (typeof item !== 'number') {
             yield* flat(item);
-        }
-        else{
+        } else {
             yield item;
         }
     }
@@ -19,7 +19,7 @@ let flat = function(arr = []){
 const arrayStructured = (arr) => {
     let a = [];
 
-    for(let item of flat(arr)){
+    for (let item of flat(arr)) {
         a.push(item);
     }
 
@@ -27,5 +27,3 @@ const arrayStructured = (arr) => {
 };
 
 export default arrayStructured;
-
-

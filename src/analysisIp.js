@@ -1,9 +1,10 @@
-
-// IP address resolution or transformation
-
+/**
+ * @description ip转换
+ * @param {type: 'int2iP' or 'ip2int', value: 值}
+ * */
 let analysisIp = (type) => (value) => {
     // type int2iP: integer is resolved to ip address
-    if(type === 'int2iP'){
+    if (type === 'int2iP') {
         let str;
         let tt = new Array();
 
@@ -17,7 +18,7 @@ let analysisIp = (type) => (value) => {
     }
 
     // type ip2int: ip transform to integer
-    if(type === 'ip2int'){
+    if (type === 'ip2int') {
         let num = 0;
 
         ip = value.split(".");
@@ -29,5 +30,3 @@ let analysisIp = (type) => (value) => {
 };
 
 export default analysisIp;
-
-
