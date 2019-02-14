@@ -36,6 +36,6 @@ let arrayStructured = hormone.arrayStructured(arr) // [1, 2, 3, 4, ...]
 // IP conversion
 let ip = '127.168.1.1'
 let analysisIp = hormone.analysisIp('ip2int', ip) // 2141716737
-let in = 2141716737
-let analysisIp = hormone.analysisIp('int2iP', in) // '127.168.1.1'
+let nu = 2141716737
+let analysisIp = hormone.analysisIp('int2iP', nu) // '127.168.1.1'
 ```
