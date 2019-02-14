@@ -1,6 +1,6 @@
 {
   "name": "hormone.js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a simple js toolkit",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,13 @@
     "url": "git+https://github.com/qqwq3/hormone.js.git"
   },
   "keywords": [
-    "js"
+    "js",
+	"react",
+	"react native"
+	"vue",
+	"angular",
+	"es6",
+	"es7"
   ],
   "author": "leehormone@yeah.net",
   "license": "ISC",

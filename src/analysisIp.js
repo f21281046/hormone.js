@@ -21,8 +21,8 @@ let analysisIp = (type) => (value) => {
     if (type === 'ip2int') {
         let num = 0;
 
-        ip = value.split(".");
-        num = Number(value[0]) * 256 * 256 * 256 + Number(value[1]) * 256 * 256 + Number(value[2]) * 256 + Number(value[3]);
+        let ip = value.split(".");
+        num = Number(ip[0]) * 256 * 256 * 256 + Number(ip[1]) * 256 * 256 + Number(ip[2]) * 256 + Number(ip[3]);
         num = num >>> 0;
 
         return num;
