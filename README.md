@@ -30,8 +30,8 @@ let secToTime = hormone.secToTime(120) // "00:02:00"
 let secToTime = hormone.secToTime(120, false) // "02:00"
 
 // Array Solutions in Arrays Form Ordinary Arrays
-let arr = [[1,2], 3, [[4]], ...]
-let arrayStructured = hormone.arrayStructured(arr) // [1, 2, 3, 4, ...]
+// let arr = [[1,2], 3, [[4]], ...]
+// let arrayStructured = hormone.arrayStructured(arr) // [1, 2, 3, 4, ...]
 
 // IP conversion
 let ip = '127.168.1.1'
