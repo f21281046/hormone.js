@@ -1,3 +1,9 @@
+
+## 一个简单而实用的js工具库
+### 安装
+
+`$ npm install hormone.js@latest --save`
+
 ## Usage
 ```javascript
 import * as hormone from 'hormone.js';
