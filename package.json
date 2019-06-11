@@ -1,6 +1,6 @@
 {
   "name": "hormone.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a simple js toolkit",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,12 @@
   },
   "keywords": [
     "js",
-	"react",
-	"react native",
-	"vue",
-	"angular",
-	"es6",
-	"es7"
+    "react",
+    "react native",
+    "vue",
+    "angular",
+    "es6",
+    "es7"
   ],
   "author": "leehormone@yeah.net",
   "license": "ISC",
