@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d382f58a-56ba-4266-bf02-60c8e95743a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/judge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/keys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/max.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/random.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reduction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uniq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/values.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/typeCheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/typeCheck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,11 +33,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/values.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -93,6 +89,7 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/src/typeCheck.js" />
         <option value="$PROJECT_DIR$/src/judge.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -206,12 +203,12 @@
       <workItem from="1560156665192" duration="604000" />
       <workItem from="1560158372497" duration="2929000" />
       <workItem from="1560223213473" duration="1554000" />
-      <workItem from="1560234400558" duration="5739000" />
+      <workItem from="1560234400558" duration="6072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25252000" />
+    <option name="totallyTimeSpent" value="25585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -383,6 +380,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
