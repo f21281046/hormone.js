@@ -31,5 +31,8 @@ export default {
     },
     isBoolean(arg) {
         return typeCheck(arg) === 'Boolean';
+    },
+    isDate(arg) {
+        return typeCheck(arg) === 'Date';
     }
 };

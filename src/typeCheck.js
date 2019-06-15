@@ -4,7 +4,7 @@
  * @param {val: 值}
  * */
 const typeCheck = val => {
-    const typeArr = ['String', 'Object', 'Number', 'Array', 'Function', 'Null', 'Undefined', 'Symbol', 'Boolean'];
+    const typeArr = ['String', 'Object', 'Number', 'Array', 'Function', 'Null', 'Undefined', 'Symbol', 'Boolean', 'Date'];
     const optc = Object.prototype.toString.call(val);
     const v = (optc.split('object')[1]).split(']')[0];
     const m = v.replace(/\s/g, '');

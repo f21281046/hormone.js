@@ -3,10 +3,10 @@
  * */
 import typeCheck from './typeCheck';
 
-const reduction = () => {
+const reduction = (arr) => {
     let newArr = [];
 
-    const handle = (arr) => {
+    let handle = arr => {
         for (let i = 0; i < arr.length; i++) {
             if (typeCheck(arr[i]) === 'Array' || Array.isArray(arr[i])) {
                 handle(arr[i]);
@@ -16,6 +16,7 @@ const reduction = () => {
         }
     };
 
+    handle(arr);
     return newArr;
 };
 

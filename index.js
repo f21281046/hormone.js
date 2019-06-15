@@ -21,3 +21,7 @@ export {default as judge} from './src/judge';
 export {default as min} from './src/min';
 export {default as max} from './src/max';
 export {default as random} from './src/random';
+export {default as dateFormat} from './src/dateFormat';
+export {default as dateOperation} from './src/dateOperation';
+export {default as dateDiff} from './src/dateDiff';
+export {default as dateDiffArr} from './src/dateDiffArr';
