@@ -92,4 +92,29 @@ hormone.routine() // [1, 2]
 // 数组去重
 let arr = [1, 1, 2, 2, 3, 3];
 hormone.uniq(arr) // [1, 2, 3]
+
+// 两日期差值
+let d1 = '2019-06-16', d2 = '2019-06-18';
+hormone.dateDiff(d1, d2) // 2 此为天数
+hormone.dateDiff(d1, d2, true) // 2880 此为分钟数
+
+// 根据日期差返回该时间段的数组
+let d1 = '2019-06-16', d2 = '2019-06-18';
+hormone.dateDiffArr(d1, d2) // ['2019-06-16', '2019-06-17', '2019-06-18']
+
+// 日期时间格式化
+let d = '2019/6/16'
+hormone.dateFormat(d, 'YYYY-MM-DD') // 2019-06-16
+hormone.dateFormat(new Date, 'YYYY-MM-DD hh:mm:ss') // 2019-06-16 12:30:30
+
+// 日期运算（加 or 减）
+let d = '2019-06-15';
+hormone.dateOperation('Y', 1, d, false) // 2018-06-15
+hormone.dateOperation('Y', 1, d, true) // 2020-06-15
+hormone.dateOperation('M', 1, d, false) // 2019-05-15
+hormone.dateOperation('M', 1, d, true) // 2019-07-15
+...
+
+// 
+
 ```
