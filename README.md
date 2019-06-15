@@ -69,6 +69,7 @@ hormone.judge.isSymbol(Symbol('leeSong')) // true
 hormone.judge.isNull(null) // true
 hormone.judge.isUndefined(undefined) // true
 hormone.judge.isBoolean(false) // true
+hormone.judge.isDate(new Date()) // true
 
 // 获取数组最大值
 let arr = [11, 22, 66];
@@ -83,11 +84,11 @@ hormone.random(1, 3) // 1 or 2 or 3
 
 // 多维数组降维
 let arr = [1, [2], [3, [4, 5, ...]]];
-hormone.reduction() // [1, 2, 3, 4, 5, ...]
+hormone.reduction(arr) // [1, 2, 3, 4, 5, ...]
 
 // 数组去掉杂质
 let arr = [1, false, null, undefined, '', {}, [], 2];
-hormone.routine() // [1, 2]
+hormone.routine(arr) // [1, 2]
 
 // 数组去重
 let arr = [1, 1, 2, 2, 3, 3];
