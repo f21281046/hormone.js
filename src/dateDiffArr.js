@@ -6,14 +6,16 @@
 
 import dateDiff from './dateDiff';
 import dateOperation from './dateOperation';
+import compareDate from './compareDate';
 
 const dateDiffArr = (d1, d2) => {
     let _diffDay = dateDiff(d1, d2);
     let _arr = [];
 
-    for (let i = 0; i <= _diffDay; i++) {
-        let _date = dateOperation('d', i, new Date(d1), true);
-        _arr.push(_date);
+    for (let i = 0; i <= Math.round(_diffDay); i++) {
+        let _date = compareDate(d1, d2) ? (new Date(d2)) : (new Date(d1))
+        let _item = dateOperation('d', i, _date, true);
+        _arr.push(_item);
     }
 
     return _arr;
