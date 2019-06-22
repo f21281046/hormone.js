@@ -106,7 +106,7 @@ hormone.dateDiffArr(d1, d2) // ['2019-06-16', '2019-06-17', '2019-06-18']
 // 日期时间格式化
 let d = '2019/6/16'
 hormone.dateFormat(d, 'YYYY-MM-DD') // 2019-06-16
-hormone.dateFormat(new Date, 'YYYY-MM-DD hh:mm:ss') // 2019-06-16 12:30:30
+hormone.dateFormat(new Date(), 'YYYY-MM-DD hh:mm:ss') // 2019-06-16 12:30:30
 
 // 日期运算（加 or 减）
 let d = '2019-06-15';
