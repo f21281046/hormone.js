@@ -114,6 +114,42 @@ hormone.dateOperation('Y', 1, d, false) // 2018-06-15
 hormone.dateOperation('Y', 1, d, true) // 2020-06-15
 hormone.dateOperation('M', 1, d, false) // 2019-05-15
 hormone.dateOperation('M', 1, d, true) // 2019-07-15
+
+// 中文字符正则验证
+let str = '中国';
+hormone.regCharacters(str) // true
+
+// 英文和数字正则验证
+let str = 'leeSong123';
+hormone.regEaf(str) // true
+
+// 邮箱正则验证
+let str = 'leehormone@yeah.net';
+hormone.regEmail(str) // true
+
+// 身份证正则验证
+let str = '5002411993090861X';
+hormone.regIdcard(str) // true
+
+// 金钱格式正则验证
+let str = '2.00'; // 2.0, 2, 0.00
+hormone.regMoney(str) // true
+
+// 手机号正则验证
+let str = '18223729372';
+hormone.regPhone(str) // true
+
+// 中国邮政编码正则验证
+let str = '401220';
+hormone.regPostalCode(str) // true
+
+// 腾讯QQ正则验证
+let str = '10000'
+hormone.regQQ(str) // true
+
+// 国内电话正则验证
+let str = '023-88888888';
+hormone.regTelephone(str) // true
 ...
 
 // 
