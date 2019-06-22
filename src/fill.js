@@ -10,6 +10,11 @@ const fill = (arr, val, startIndex = 0, endIndex = 0) => {
 
     for (let i = 0; i < arr.length; i++) {
         _newArr[i] = arr[i];
+        if (startIndex >=0 && endIndex === 0) {
+            for (let p = 0; p < arr.length - startIndex; p++) {
+                _newArr[p + startIndex] = val;
+            }
+        }
         if (startIndex >= 0 && endIndex >= 0 && _endIndex > _startIndex) {
             if (_endIndex - _startIndex > arr.length) {
                 for (let s = _startIndex; s <= arr.length; s++) {
