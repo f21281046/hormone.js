@@ -34,4 +34,4 @@ export {default as regQQ} from './src/regQQ';
 export {default as regPostalCode} from './src/regPostalCode';
 export {default as regEaf} from './src/regEaf';
 export {default as regMoney} from './src/regMoney';
-export {default as Fetch} from './src/Fetch';
+export {default as http} from './src/Fetch';
