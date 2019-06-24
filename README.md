@@ -150,8 +150,16 @@ hormone.regQQ(str) // true
 // 国内电话正则验证
 let str = '023-88888888';
 hormone.regTelephone(str) // true
+
+// 数据请求
+let url = 'http://jsonplaceholder.typicode.com/users';
+hormone.http.fetch({
+  method: 'GET',
+  headers: {}
+}).then(res => console.log(res))
+hormone.http.get(url).then(res => console.log(res))
+hormone.http.post(url, headers, data).then(res => console.log(res))
+hormone.http.delete(url, headers, data).then(res => console.log(res))
+hormone.http.put(url, headers, data).then(res => console.log(res))
 ...
-
-// 
-
 ```
