@@ -51,7 +51,7 @@ hormone.keys(obj) // [a, b, c]
 
 // 获取对象的值
 let obj = {a: 1, b: 2, c: 3};
-hormone.keys(obj) // [1, 2, c]
+hormone.values(obj) // [1, 2, c]
 
 // 改变数组元素
 let arr = [1, 2, 3];
