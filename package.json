@@ -1,6 +1,6 @@
 {
   "name": "hormone.js",
-  "version": "1.0.10-0",
+  "version": "1.0.11-0",
   "description": "a simple js toolkit",
   "main": "index.js",
   "scripts": {
