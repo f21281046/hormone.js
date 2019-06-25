@@ -3,6 +3,7 @@
  * @name 数据请求
  * */
 
+/**
 function handle (obj = {}) {
     let {url, method, headers, data} = obj;
     let _obj = {url, method, headers};
@@ -55,3 +56,4 @@ class http {
 }
 
 export default new http();
+**/
