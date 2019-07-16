@@ -151,15 +151,25 @@ hormone.regQQ(str) // true
 let str = '023-88888888';
 hormone.regTelephone(str) // true
 
+// 函数暂存功能，减少开销，方法性能优化
+const fibonacci = (n) => {
+    return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
+};
+const memoizeFibonacci = hormone.memoize(fibonacci);
+console.log(memoizeFibonacci(45));   // 新值，执行中...;    1134903170  // 等待时间比较长
+console.log(memoizeFibonacci(45));   // 来自缓存;    1134903170
+console.log(memoizeFibonacci(45));   // 来自缓存;    1134903170
+...
+
 // 数据请求
-let url = 'http://jsonplaceholder.typicode.com/users';
-hormone.http.fetch({
-  method: 'GET',
-  headers: {}
-}).then(res => console.log(res))
-hormone.http.get(url).then(res => console.log(res))
-hormone.http.post(url, headers, data).then(res => console.log(res))
-hormone.http.delete(url, headers, data).then(res => console.log(res))
-hormone.http.put(url, headers, data).then(res => console.log(res))
+// let url = 'http://jsonplaceholder.typicode.com/users';
+// hormone.http.fetch({
+ // method: 'GET',
+  // headers: {}
+// }).then(res => console.log(res))
+// hormone.http.get(url).then(res => console.log(res))
+// hormone.http.post(url, headers, data).then(res => console.log(res))
+// hormone.http.delete(url, headers, data).then(res => console.log(res))
+// hormone.http.put(url, headers, data).then(res => console.log(res))
 ...
 ```
