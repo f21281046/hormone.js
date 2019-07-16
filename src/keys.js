@@ -1,16 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 /**
  * @name 获取对象的键
  * @returns 数组
  * */
 
-const keys = (obj) => {
-    let arr = [];
+var keys = function keys(obj) {
+    var arr = [];
 
-    for (let k in obj) {
+    for (var k in obj) {
         arr.push(k);
     }
 
     return arr;
 };
 
-export default keys;
+exports.default = keys;

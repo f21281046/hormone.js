@@ -1,14 +1,23 @@
-/**
- * @name 中文字符正则验证
- * */
-import judge from './judge';
-const regCharacters = val => {
-    if (!judge.isString(val)) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _judge = require('./judge');
+
+var _judge2 = _interopRequireDefault(_judge);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var regCharacters = function regCharacters(val) {
+    if (!_judge2.default.isString(val)) {
         return console.warn('warn: ' + '请输入字符串类型的中文字符');
     }
 
-    let reg = /^[\u4e00-\u9fa5]{0,}$/;
+    var reg = /^[\u4e00-\u9fa5]{0,}$/;
     return reg.test(val);
-};
-
-export default regCharacters;
+}; /**
+    * @name 中文字符正则验证
+    * */
+exports.default = regCharacters;

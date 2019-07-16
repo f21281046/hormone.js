@@ -1,11 +1,16 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 /**
  * @name 数组去重
  * */
 
-const uniq = (arr) => {
-    let temp = [];
+var uniq = function uniq(arr) {
+    var temp = [];
 
-    for (let i = 0; i < arr.length; i++) {
+    for (var i = 0; i < arr.length; i++) {
         if (temp.indexOf(arr[i]) === -1) {
             temp.push(arr[i]);
         }
@@ -14,4 +19,4 @@ const uniq = (arr) => {
     return temp;
 };
 
-export default uniq;
+exports.default = uniq;

@@ -1,12 +1,20 @@
-/**
- * @name 时间格式化
- * @param type 'YYYY-DD-MM hh-mm-ss' or 'YYYY-DD-MM'
- * */
-import judge from './judge';
+'use strict';
 
-const dateFormat = (date, type = 'YYYY-MM-DD') => {
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _judge = require('./judge');
+
+var _judge2 = _interopRequireDefault(_judge);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var dateFormat = function dateFormat(date) {
+    var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'YYYY-MM-DD';
+
     Date.prototype.Format = function (fmt) {
-        let o = {
+        var o = {
             "M+": this.getMonth() + 1, // 月份 - month
             "D+": this.getDate(), // 日 - date
             "h+": this.getHours(), // 小时 - houres
@@ -20,9 +28,9 @@ const dateFormat = (date, type = 'YYYY-MM-DD') => {
             fmt = fmt.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1.length));
         }
 
-        for (let k in o) {
+        for (var k in o) {
             if (new RegExp("(" + k + ")").test(fmt)) {
-                fmt = fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? (o[k]) : (('00' + o[k]).substr(('' + o[k]).length)));
+                fmt = fmt.replace(RegExp.$1, RegExp.$1.length === 1 ? o[k] : ('00' + o[k]).substr(('' + o[k]).length));
             }
         }
 
@@ -30,11 +38,13 @@ const dateFormat = (date, type = 'YYYY-MM-DD') => {
     };
 
     // 若是日期或者字符串类型
-    if (judge.isDate(date) || judge.isString(date)) {
+    if (_judge2.default.isDate(date) || _judge2.default.isString(date)) {
         return new Date(date).Format(type);
     }
 
     return date;
-};
-
-export default dateFormat;
+}; /**
+    * @name 时间格式化
+    * @param type 'YYYY-DD-MM hh-mm-ss' or 'YYYY-DD-MM'
+    * */
+exports.default = dateFormat;

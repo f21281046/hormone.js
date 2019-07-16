@@ -1,38 +1,47 @@
-/**
- * @name 数据类型判断
- * @return boolean
- * */
-import typeCheck from './typeCheck';
+'use strict';
 
-export default {
-    isArray(arg) {
-        return typeCheck(arg) === 'Array' ;
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeCheck = require('./typeCheck');
+
+var _typeCheck2 = _interopRequireDefault(_typeCheck);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+    isArray: function isArray(arg) {
+        return (0, _typeCheck2.default)(arg) === 'Array';
     },
-    isObject(arg) {
-        return typeCheck(arg) === 'Object';
+    isObject: function isObject(arg) {
+        return (0, _typeCheck2.default)(arg) === 'Object';
     },
-    isString(arg) {
-        return typeCheck(arg) === 'String';
+    isString: function isString(arg) {
+        return (0, _typeCheck2.default)(arg) === 'String';
     },
-    isNumber(arg) {
-        return typeCheck(arg) === 'Number';
+    isNumber: function isNumber(arg) {
+        return (0, _typeCheck2.default)(arg) === 'Number';
     },
-    isFunction(arg) {
-        return typeCheck(arg) === 'Function';
+    isFunction: function isFunction(arg) {
+        return (0, _typeCheck2.default)(arg) === 'Function';
     },
-    isSymbol(arg) {
-        return typeCheck(arg) === 'Symbol';
+    isSymbol: function isSymbol(arg) {
+        return (0, _typeCheck2.default)(arg) === 'Symbol';
     },
-    isNull(arg) {
-        return typeCheck(arg) === 'Null';
+    isNull: function isNull(arg) {
+        return (0, _typeCheck2.default)(arg) === 'Null';
     },
-    isUndefined(arg) {
-        return typeCheck(arg) === 'Undefined';
+    isUndefined: function isUndefined(arg) {
+        return (0, _typeCheck2.default)(arg) === 'Undefined';
     },
-    isBoolean(arg) {
-        return typeCheck(arg) === 'Boolean';
+    isBoolean: function isBoolean(arg) {
+        return (0, _typeCheck2.default)(arg) === 'Boolean';
     },
-    isDate(arg) {
-        return typeCheck(arg) === 'Date';
+    isDate: function isDate(arg) {
+        return (0, _typeCheck2.default)(arg) === 'Date';
     }
-};
+}; /**
+    * @name 数据类型判断
+    * @return boolean
+    * */

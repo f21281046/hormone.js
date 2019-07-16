@@ -57,3 +57,4 @@ class http {
 
 export default new http();
 **/
+"use strict";

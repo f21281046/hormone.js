@@ -1,14 +1,21 @@
-/**
- * @name 多维数组降维
- * */
-import typeCheck from './typeCheck';
+'use strict';
 
-const reduction = (arr) => {
-    let newArr = [];
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
-    let handle = arr => {
-        for (let i = 0; i < arr.length; i++) {
-            if (typeCheck(arr[i]) === 'Array' || Array.isArray(arr[i])) {
+var _typeCheck = require('./typeCheck');
+
+var _typeCheck2 = _interopRequireDefault(_typeCheck);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var reduction = function reduction(arr) {
+    var newArr = [];
+
+    var handle = function handle(arr) {
+        for (var i = 0; i < arr.length; i++) {
+            if ((0, _typeCheck2.default)(arr[i]) === 'Array' || Array.isArray(arr[i])) {
                 handle(arr[i]);
             } else {
                 newArr.push(arr[i]);
@@ -18,6 +25,7 @@ const reduction = (arr) => {
 
     handle(arr);
     return newArr;
-};
-
-export default reduction;
+}; /**
+    * @name 多维数组降维
+    * */
+exports.default = reduction;

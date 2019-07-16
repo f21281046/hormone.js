@@ -1,14 +1,23 @@
-/**
- * @name 邮箱正则验证
- * */
-import judge from './judge';
-const regEmail = val => {
-    if (!judge.isString(val)) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _judge = require('./judge');
+
+var _judge2 = _interopRequireDefault(_judge);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var regEmail = function regEmail(val) {
+    if (!_judge2.default.isString(val)) {
         return console.warn('warn: ' + '请输入字符串类型的邮箱');
     }
 
-    let reg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+    var reg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     return reg.test(val);
-};
-
-export default regEmail;
+}; /**
+    * @name 邮箱正则验证
+    * */
+exports.default = regEmail;
