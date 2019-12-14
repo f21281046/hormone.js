@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _chunk = require('./src/Array/chunk');
 
+///这里写法有问题
 Object.defineProperty(exports, 'chunk', {
   enumerable: true,
   get: function get() {
