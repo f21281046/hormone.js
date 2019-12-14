@@ -4,9 +4,11 @@
 
 `$ npm install hormone.js@latest --save`
 
-## Usage
+### 开始
+`import * as hormone from 'hormone.js';`
+
+### 数组 
 ```javascript
-import * as hormone from 'hormone.js';
 
 // 检测是否为空
 let value = '' | [] | null | {} | undefined
