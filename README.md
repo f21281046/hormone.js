@@ -7,7 +7,7 @@
 ### 开始
 `import * as hormone from 'hormone.js';`
 
-### 数组 
+#### 数组 
 ```javascript
 
 // 检测是否为空
